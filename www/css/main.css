@@ -8,8 +8,20 @@ html {
 
 /*------header-------*/
 
+.masthead {
+	background-image: url("../img/logo.svg");
+	background-size: 55px auto;
+	padding-top: .5em;
+	background-repeat: no-repeat;
+	background-position: left 20px;
+	text-align: center;
+	margin: 1em;
+}
+
+
 h1 {
 	font-size: 1.8em;
+	margin:0;
 }
 
 .menu ul {
@@ -33,29 +45,10 @@ background-color:#c7e9ee;
 width:100%;
 }
 
-/*------logo & button-------*/
-
-h1 {
-	padding-left: 70px;
-	display:inline-block;
-	position:relative;
-	top:2px;
-	margin:0.5em;
-}
-
-.logo {
-	width: 13%;
-	position: relative;
-	top:10px;
-	right:370px;
-}
+/*------button-------*/
 
 .buy {
-	margin-bottom:1rem;
-	background-color:#c7e9ee;
-	text-decoration:none;
-	padding:5px;
-	border-radius:10px;
+	button
 }
 
 /*------Image-------*/
@@ -100,39 +93,24 @@ img {
 
 /*------Information-------*/
 
-
-dt, dd {
-	display: inline;
-	margin-bottom:2em;
-}
-
-.date {
-	float:left;
-	width: 8.8em;
-}
-
-.days {
-	margin-left: 0.1em;
-}
-
-.builders {
-	float:left;
+.info {
 	margin-left:1em;
 }
 
-.civ {
-	float:left;
-	margin-left: 0.1em;
+dd, dt {
+	display:inline;
 }
 
-.location {
-	float:left;
-	margin-left:1em;
+dt {
+float:left;
+clear:left;
+font-weight: bold;
 }
 
-.place {
+dd {
 	float:left;
-	margin-left: 0.1em;
+	margin:0;
+	margin-left:0.5em;
 }
 
 .Egypt {
@@ -144,11 +122,15 @@ dt, dd {
 	background-color: #c7e9ee;
 	border-radius:20px;
 	padding:0.5em;
+	text-align:center;
+	margin-top:0.5em;
 }
 
 .button {
 	text-align:center;
 	margin-bottom: 1em;
+	margin-top:;
+	clear: both;
 }
 
 /*------Atlantis-------*/
