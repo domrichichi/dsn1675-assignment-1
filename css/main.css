@@ -136,3 +136,81 @@ img {
 	background-color: #c7e9ee;
 	border-radius:20px;
 }
+
+/*------Atlantis-------*/
+
+.movie {
+	position: relative;
+}
+
+.floatwonder-two {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.float-two {
+	position:absolute;
+	bottom: 4em;
+	left: 200px;
+}
+
+.drawing {
+	width: 100%;
+}
+
+.atlfig {
+	position: relative;
+	color: white;
+}
+
+.atldiv {
+	position: relative;
+}
+
+.atitle {
+	position:absolute;
+	bottom: 100px;
+	left: 100px;
+	font-weight: bold;
+	font-size:1.3rem;
+}
+
+.atlfloat {
+	position:absolute;
+}
+
+.showtimes {
+	position:absolute;
+	left: 95px;
+	color: black;
+	bottom:6px
+}
+
+.showdiv {
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color: #c7e9ee;
+	position: relative;
+	bottom: 50px;
+	border-radius: 30px;
+	width:60%;
+	left:120px;
+}
+
+.sales {
+	text-align: center;
+}
+
+.centerbody {
+	text-align: center;
+}
+
+.adults {
+	display: inline-block;
+	padding-left: 100px;
+}
+
+.kids {
+	display: inline-block;
+	padding-left: 180px
+}
