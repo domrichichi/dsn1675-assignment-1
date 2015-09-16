@@ -214,3 +214,9 @@ img {
 	display: inline-block;
 	padding-left: 180px
 }
+
+/*------footer-------*/
+
+.services {
+	display: block;
+}
