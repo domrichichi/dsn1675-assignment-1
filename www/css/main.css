@@ -1,3 +1,9 @@
+@-moz-viewport {width: device-width; scale: 1;}
+@-ms-viewport {width: device-width; scale: 1;}
+@-o-viewport {width: device-width; scale: 1;}
+@-webkit-viewport {width: device-width; scale: 1;}
+@viewport {width: device-width; scale: 1;}
+
 html {
   box-sizing: border-box;
 }
@@ -6,21 +12,27 @@ html {
   box-sizing: inherit;
 }
 
+body {
+	margin:0;
+}
+
 /*------header-------*/
 
 .masthead {
 	background-image: url("../img/logo.svg");
 	background-size: 55px auto;
-	padding-top: .5em;
 	background-repeat: no-repeat;
-	background-position: left 20px;
+	background-position: left 5px;
 	text-align: center;
-	margin: 1em;
 }
 
 h1 {
 	font-size: 1.8em;
-	margin:0;
+	margin:1em;
+}
+
+.menu {
+	margin-bottom: 0;
 }
 
 .menu ul {
@@ -44,7 +56,7 @@ background-color:#c7e9ee;
 width:100%;
 }
 
-/*------button-------*/
+/*------buy button-------*/
 
 .buy {
 	float:right;
@@ -71,29 +83,23 @@ img {
 }
 
 .headfloat {
-	position: relative;
-	color: white;
+	color: black;
 }
 
 .float {
-	position:absolute;
-	bottom: 4em;
-	left: 40px;
+position: absolute;
 }
 
 .floatwonder {
-	position:absolute;
-	bottom: 100px;
-	left: 150px;
+
 }
 
 .content {
-	position: relative;
+
 }
 
 .sevenwonders {
-	padding-left:20px;
-	padding-right:20px;
+
 }
 
 /*------Information-------*/
@@ -225,3 +231,4 @@ dd {
 .contact {
 	display: inline;
 }
+
