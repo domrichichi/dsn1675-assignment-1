@@ -19,32 +19,49 @@ body {
 /*------header-------*/
 
 .masthead {
-	background-image: url("../img/logo.svg");
-	background-size: 55px auto;
-	background-repeat: no-repeat;
-	background-position: left 5px;
-	text-align: center;
+	text-align: left;
+	position: relative;
 }
 
-h1 {
+.logo
+{
+	width:2em;
+	/*float: left;*/
+	display: inline-block;
+	position: relative;
+	margin-left: 2em;
+}
+
+/*h1 {
 	font-size: 1.8em;
 	margin:1em;
+}*/
+
+h1 {
+	display: block;
+	margin:1.2em;
 }
 
 .menu {
 	margin-bottom: 0;
+	margin-top:1em;
 }
 
 .menu ul {
 	margin: 0;
 	list-style-type: none;
 	overflow: hidden;
+	padding: 0;
 }
 
-nav li {
-	float: left;
-	padding: 0.5em;
-}
+	nav li {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	padding: 0.5em 0 0.5em 0;
+	margin: 0;
+	}
+
 
 .menu a {
 	text-align: center;
@@ -56,51 +73,81 @@ background-color:#c7e9ee;
 width:100%;
 }
 
+@media only screen and (min-width: 15em) {
+	nav li {
+		width: 49%;
+	}
+
+	h1 {
+	font-size: 1.8em;
+	margin:1.4em;
+	}
+
+}
+
+@media only screen and (min-width: 37.5em) {
+	nav li {
+	width: 24%;
+	}
+}
+
 /*------buy button-------*/
 
 .buy {
-	float:right;
+	/*float:right;*/
 	background-color:#c7e9ee;
-	width:10%;
-	position:absolute;
-	right:20px;
-	top:40px;
 	border-radius:10px;
+	text-decoration: none;
+	padding:0.5em;
 }
+
+.buybutton {
+	width: 3em;
+	float: right;
+	margin-right: 2em;
+}
+
+@media only screen and (min-width: 15em) {
+
+}
+
+@media only screen and (min-width: 22em) {
+
+
+
+}
+
+
+/*-------------*/
+
+/*------logo & Header Display-------*/
+
+/*-------------*/
 
 /*------Image-------*/
 
-h2 {
-	text-align: center;
-}
-
-h3 {
-	padding-left: 20px;
-}
-
-img {
-	width: 100%;
-}
-
-.headfloat {
-	color: black;
-}
-
-.float {
-position: absolute;
-}
-
-.floatwonder {
-
+.headerimg {
+	position: relative;
+	color: white;
 }
 
 .content {
-
+	position: absolute;
+	width:100%;
+	text-align: center;
+	bottom: 0;
+	margin: 4em 0;
 }
 
-.sevenwonders {
-
+.headfloat h2, .headfloat p {
+	display: block;
 }
+
+.headerimg img {
+	width: 100%;
+}
+
+/*-------------*/
 
 /*------Information-------*/
 
@@ -144,7 +191,15 @@ dd {
 	clear: both;
 }
 
-/*------Atlantis-------*/
+.sevenwonders {
+
+	width: calc(100% - 2em);
+	margin: 0 1em;
+	}
+
+/*-------------*/
+
+/*------Atlantis Image & Text-------*/
 
 .movie {
 	position: relative;
@@ -174,16 +229,21 @@ dd {
 	position: relative;
 }
 
+.textbox {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align:center;
+	margin: 4em 0;
+
+}
+
 .atitle {
-	position:absolute;
-	bottom: 100px;
-	left: 100px;
-	font-weight: bold;
-	font-size:1.3rem;
+	display:block;
 }
 
 .atlfloat {
-	position:absolute;
+	display: block;
 }
 
 .showtimes {
@@ -192,6 +252,7 @@ dd {
 	color: black;
 	bottom:6px
 }
+
 
 .showdiv {
 	padding-top:15px;
@@ -212,15 +273,13 @@ dd {
 	text-align: center;
 }
 
-.adults {
+.adults, .kids {
+	width: 50%;
 	display: inline-block;
-	padding-left: 100px;
+	text-align: center;
 }
 
-.kids {
-	display: inline-block;
-	padding-left: 180px
-}
+/*-------------*/
 
 /*------footer-------*/
 
@@ -231,4 +290,61 @@ dd {
 .contact {
 	display: inline;
 }
+/*-------------*/
 
+
+@media only screen and (min-width: 50em) {
+
+	.leftmenu {
+		width: 15em;
+		height: 100vh;
+		position:fixed;
+	}
+
+	main, footer {
+		width: calc(100% - 15em);
+		float:right;
+	}
+
+	nav li {
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+	margin-left: 1em;
+	padding: 0.5em 0 0.5em 0;
+	}
+
+.content {
+	width:100%;
+	text-align: center;
+	position: relative;
+	top: -5.8em;
+}
+
+.content h2 {
+	position: relative;
+
+	color: white;
+}
+
+.content p {
+color:black;
+}
+
+.headerimg {
+	position: static;
+}
+
+.headfloat h2, .headfloat p {
+	display: block;
+}
+
+.headfloat {
+	margin:0;
+}
+
+.headerimg img {
+	width: 100%;
+}
+
+}
