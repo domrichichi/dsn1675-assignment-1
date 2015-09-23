@@ -6,6 +6,15 @@
 
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  -text-size-adjust:100%;
+
+  font-size: 100%;
+  line-height:1.3;
+  font: normal 100%/1.3 Verdana,sans-serif;
+}
 }
 
 *, *::before, *::after {
@@ -289,6 +298,10 @@ dd {
 	text-align: center;
 }
 
+.days {
+	margin-left: 1em;
+}
+
 /*-------------*/
 
 /*------footer-------*/
@@ -299,6 +312,10 @@ dd {
 
 .contact {
 	display: inline;
+}
+
+.foot {
+	padding-left: 1em;
 }
 /*-------------*/
 
@@ -356,5 +373,32 @@ color:black;
 .headerimg img {
 	width: 100%;
 }
+
+}
+
+@media print {
+
+  .menu {
+    display:none;
+  }
+
+  main a::after {
+    text-decoration: none;
+
+  }
+
+  .wonderheader {
+  	text-align: center;
+  }
+
+  h1 {
+  	display: inline-block;
+  }
+
+  .logo {
+  	float: left;
+  	position: absolute;
+  	top: 2em;
+  }
 
 }
