@@ -107,14 +107,6 @@ width:100%;
 	margin-right: 2em;
 }
 
-@media only screen and (min-width: 15em) {
-
-}
-
-@media only screen and (min-width: 22em) {
-
-
-
 }
 
 
@@ -127,6 +119,21 @@ width:100%;
 /*------Image-------*/
 
 .headerimg {
+position:relative;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 0;
+}
+
+.headfloat {
+	position:relative;
+}
+
+/*.headerimg {
 	position: relative;
 	color: white;
 }
@@ -145,7 +152,11 @@ width:100%;
 
 .headerimg img {
 	width: 100%;
-}
+}*/
+
+@media only screen and (min-width: 15em) {
+	}
+
 
 /*-------------*/
 
