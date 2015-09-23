@@ -158,9 +158,6 @@ position:relative;
 	width: 100%;
 }*/
 
-@media only screen and (min-width: 15em) {
-	}
-
 
 /*-------------*/
 
@@ -322,6 +319,11 @@ dd {
 
 @media only screen and (min-width: 50em) {
 
+	html {
+    font-size:110%;
+    line-height:1.4;
+  }
+
 	.leftmenu {
 		width: 15em;
 		height: 100vh;
@@ -388,17 +390,60 @@ color:black;
   }
 
   .wonderheader {
-  	text-align: center;
+  	text-align:;
   }
 
   h1 {
+  	display: inline;
+  	margin-bottom: 1em;
+  }
+
+  .logo img {
+  	position: relative;
+  }
+
+
+  .buy {
+  	display: none;
+  }
+
+  img {
+  	max-width: 33%;
+  	float: left;
+  	position:relative;
+  	margin:0;
+  	clear: both;
+  }
+
+  .sevenwonders {
+  	margin-bottom: 2em;
+  }
+
+  .headerimg img {
+  	display: none;
+  }
+
+  .drawing {
+  	float:left;
+  }
+
+  .info {
+  	float:left;
+  }
+
+  .atitle {
+  	color: black;
+  }
+
+  .atlfloat {
+  	color: black;
+  }
+
+  .button {
   	display: inline-block;
   }
 
-  .logo {
-  	float: left;
-  	position: absolute;
-  	top: 2em;
-  }
-
+.page-break {
+	page-break-before: always
+}
 }
